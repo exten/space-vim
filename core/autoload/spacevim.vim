@@ -40,7 +40,7 @@ function! spacevim#begin() abort
 endfunction
 
 function! s:check_vim_plug() abort
-  let l:plug_path = g:spacevim.nvim ? '~/.local/share/nvim/site/autoload/plug.vim' : '~/.vim/autoload/plug.vim'
+  let l:plug_path = g:spacevim.nvim ? '~/.vim/plugged/plug.vim' : '~/.vim/autoload/plug.vim'
   if empty(glob(l:plug_path)) | call spacevim#vim#plug#download(l:plug_path) | endif
 endfunction
 
