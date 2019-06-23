@@ -11,9 +11,10 @@ let g:spacevim_plug_home = '~/.vim/plugged'
 " Enable the existing layers in space-vim.
 " Refer to https://github.com/liuchengxu/space-vim/blob/master/layers/LAYERS.md for all available layers.
 let g:spacevim_layers = [
-      \ 'fzf', 'better-defaults', 'which-key',
-      \ 'cscope', 'ycmd', ]
+      \ 'fzf', 'which-key', 'better-defaults',
+      \ 'cscope', 'ycmd', 'ctags', 'go', 'hybrid',]
 
+"      \ 'fzf', 'better-defaults', 'which-key',
 " Uncomment the following line if your terminal(-emulator) supports true colors.
 " let g:spacevim_enable_true_color = 1
 
@@ -35,7 +36,7 @@ function! UserInit()
 endfunction
 
 " Override the default settings from space-vim as well as adding extras
-function! UserConfig()
+function! UserConfig() abort
 
   " Override the default settings.
   " Uncomment the following line to disable relative number.
@@ -45,5 +46,4 @@ function! UserConfig()
   " Uncomment the following line If you have installed the powerline fonts.
   " It is good for airline layer.
   " let g:airline_powerline_fonts = 1
-
 endfunction
