@@ -1,0 +1,1 @@
+MP 'majutsushi/tagbar'
